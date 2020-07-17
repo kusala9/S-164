@@ -1,0 +1,6 @@
+#!/bin/bash
+rsync -azvh ../../s64v4/data/S-64_S100_Unencrypted_TDS_June_2020 ./S-64_S100_Unencrypted_TDS_June_2020
+rsync -azvh ../../s64v4/data/v4/BaseTest ./BaseTest
+git add -A
+git commit -a -m 'Cron update'
+git push
